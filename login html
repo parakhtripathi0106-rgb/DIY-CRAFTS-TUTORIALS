@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - The Creative Hub</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <a href="index.html" class="logo-link">Creative Hub</a>
+        <div class="login-card">
+            <h2>Welcome Back!</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <p id="validation-message" class="validation-message"></p>
+                <button type="submit" class="btn btn-primary btn-block">Log In</button>
+            </form>
+            <p class="switch-link">
+                Don't have an account? <a href="signup.html">Sign Up Here</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Minimal JS for form validation message (optional)
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const messageElement = document.getElementById('validation-message');
+            // Basic client-side check example
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            if (email.length < 5 || password.length < 6) {
+                messageElement.textContent = 'Please enter a valid email and a password of at least 6 characters.';
+                messageElement.style.color = '#e74c3c';
+            } else {
+                // In a real application, you would send this to a server
+                messageElement.textContent = 'Login attempt successful! Redirecting...';
+                messageElement.style.color = '#2ecc71';
+                // For demonstration, redirect after 1 second
+                setTimeout(() => {
+                    window.location.href = 'index.html'; 
+                }, 1000);
+            }
+        });
+    </script>
+</body>
+</html>
