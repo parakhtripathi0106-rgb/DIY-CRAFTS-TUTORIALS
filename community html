@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Hub - Meet the Makers | Creative Hub</title>
+    <link rel="stylesheet" href="community.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">Creative Hub</a>
+            <ul class="nav-links">
+                <li><a href="categories.html"><i class="fas fa-th-large"></i> Categories</a></li>
+                <li><a href="shop.html"><i class="fas fa-store"></i> Shop</a></li>
+                <li><a href="community.html" class="active"><i class="fas fa-users"></i> Community</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="upload.html" class="btn btn-upload"><i class="fas fa-plus"></i> Upload</a>
+                <a href="login.html" class="btn btn-login">Login</a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="container community-main">
+        <section class="community-header">
+            <h1 class="community-title">Meet Our Global Creators</h1>
+            <p class="community-tagline">Connect with talented artists, view their profiles, and explore their unique craft specializations.</p>
+        </section>
+
+        <section class="artist-grid">
+            
+            <div class="artist-card">
+                <div class="profile-photo-container">
+                    <img src="assets/images/artist1.jpg" alt="Profile of Elena V." class="profile-photo">
+                </div>
+                <div class="card-content">
+                    <h3 class="artist-name">Elena V.</h3>
+                    <p class="specialization"><i class="fas fa-feather-alt"></i> Specializes in: **Resin Art & Jewelry**</p>
+                    <a href="tutorials.html" class="btn btn-tutorials">View 15 Tutorials</a>
+                </div>
+            </div>
+
+            <div class="artist-card">
+                <div class="profile-photo-container">
+                    <img src="assets/images/artist2.jpg" alt="Profile of David K." class="profile-photo">
+                </div>
+                <div class="card-content">
+                    <h3 class="artist-name">David K.</h3>
+                    <p class="specialization"><i class="fas fa-ruler-combined"></i> Specializes in: **Fine Woodworking & Furniture**</p>
+                    <a href="tutorials.html" class="btn btn-tutorials">View 22 Tutorials</a>
+                </div>
+            </div>
+
+            <div class="artist-card">
+                <div class="profile-photo-container">
+                    <img src="assets/images/artist3.jpg" alt="Profile of Sarah M." class="profile-photo">
+                </div>
+                <div class="card-content">
+                    <h3 class="artist-name">Sarah M.</h3>
+                    <p class="specialization"><i class="fas fa-palette"></i> Specializes in: **Acrylic Painting & Canvas**</p>
+                    <a href="tutorials.html" class="btn btn-tutorials">View 8 Tutorials</a>
+                </div>
+            </div>
+
+            <div class="artist-card">
+                <div class="profile-photo-container">
+                    <img src="assets/images/artist4.jpg" alt="Profile of Kenji O." class="profile-photo">
+                </div>
+                <div class="card-content">
+                    <h3 class="artist-name">Kenji O.</h3>
+                    <p class="specialization"><i class="fas fa-tshirt"></i> Specializes in: **Sewing & Garment DIY**</p>
+                    <a href="tutorials.html" class="btn btn-tutorials">View 11 Tutorials</a>
+                </div>
+            </div>
+
+            <div class="artist-card">
+                <div class="profile-photo-container">
+                    <img src="assets/images/artist5.jpg" alt="Profile of Aisha B." class="profile-photo">
+                </div>
+                <div class="card-content">
+                    <h3 class="artist-name">Aisha B.</h3>
+                    <p class="specialization"><i class="fas fa-hat-cowboy"></i> Specializes in: **Crochet & Knitting**</p>
+                    <a href="tutorials.html" class="btn btn-tutorials">View 30 Tutorials</a>
+                </div>
+            </div>
+
+            <div class="artist-card">
+                <div class="profile-photo-container">
+                    <img src="assets/images/artist6.jpg" alt="Profile of Liam P." class="profile-photo">
+                </div>
+                <div class="card-content">
+                    <h3 class="artist-name">Liam P.</h3>
+                    <p class="specialization"><i class="fas fa-lightbulb"></i> Specializes in: **Home DIY & Decorating**</p>
+                    <a href="tutorials.html" class="btn btn-tutorials">View 18 Tutorials</a>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Creative Hub. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Minimal JS for mobile navigation toggle
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
