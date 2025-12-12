@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Craft Supplies - The Creative Hub Store</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">Creative Hub</a>
+            <ul class="nav-links">
+                <li><a href="categories.html"><i class="fas fa-th-large"></i> Categories</a></li>
+                <li><a href="shop.html" class="active"><i class="fas fa-store"></i> Shop</a></li>
+                <li><a href="community.html"><i class="fas fa-users"></i> Community</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="upload.html" class="btn btn-upload"><i class="fas fa-plus"></i> Upload</a>
+                <a href="login.html" class="btn btn-login">Login</a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="container shop-main">
+        <section class="shop-header">
+            <h1 class="shop-title">Premium Craft Supplies</h1>
+            <p class="shop-tagline">Everything you need to turn inspiration into reality, curated by our experts.</p>
+        </section>
+
+        <section class="product-grid">
+            
+            <div class="product-card">
+                <div class="image-placeholder resin-kit">
+                    
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Beginner Epoxy Resin Kit</h3>
+                    <p class="product-category">Resin Art</p>
+                    <div class="price-action">
+                        <span class="product-price">$39.99</span>
+                        <button class="btn btn-cart" onclick="addToCart('Resin Kit')"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="image-placeholder paint-set">
+                    
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">24-Color Pastel Acrylic Set</h3>
+                    <p class="product-category">Arts & Painting</p>
+                    <div class="price-action">
+                        <span class="product-price">$24.50</span>
+                        <button class="btn btn-cart" onclick="addToCart('Pastel Paints')"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="image-placeholder needles">
+                    
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Ergonomic Crochet Hook Set (12 pcs)</h3>
+                    <p class="product-category">Knitting & Crochet</p>
+                    <div class="price-action">
+                        <span class="product-price">$18.00</span>
+                        <button class="btn btn-cart" onclick="addToCart('Crochet Hooks')"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="image-placeholder tools">
+                    
+
+[Image of Precision Tool Kit]
+
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Precision Woodworking Tool Set</h3>
+                    <p class="product-category">Wooden Crafts</p>
+                    <div class="price-action">
+                        <span class="product-price">$65.99</span>
+                        <button class="btn btn-cart" onclick="addToCart('Precision Tools')"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="image-placeholder paper">
+                    
+
+[Image of Patterned Scrapbook Paper]
+
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Luxury Patterned Scrapbook Stack</h3>
+                    <p class="product-category">Paper Crafts</p>
+                    <div class="price-action">
+                        <span class="product-price">$12.95</span>
+                        <button class="btn btn-cart" onclick="addToCart('Scrapbook Stack')"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Creative Hub. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Minimal JS for mobile navigation toggle
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Minimal JS for Add to Cart functionality (No backend)
+        function addToCart(productName) {
+            alert(productName + ' added to cart! (This is a demo action)');
+        }
+    </script>
+</body>
+</html>
