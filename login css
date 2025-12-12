@@ -1,0 +1,157 @@
+/* --- Login Specific CSS (Using variables from style.css for consistency) --- */
+:root {
+    --color-primary: #8a9ba8; /* Soft Slate Blue */
+    --color-secondary: #f0c3c3; /* Soft Rose */
+    --color-text: #333d47;
+    --color-light-bg: #f5f5f5;
+    --color-white: #ffffff;
+    --spacing-large: 2rem;
+    --spacing-medium: 1.5rem;
+    --spacing-small: 1rem;
+    --border-radius-large: 15px;
+    --border-radius-medium: 8px;
+    --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-light-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: var(--spacing-medium);
+}
+
+/* --- Card Style Layout --- */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+}
+
+.logo-link {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-decoration: none;
+    margin-bottom: var(--spacing-medium);
+}
+
+.login-card {
+    background-color: var(--color-white);
+    padding: var(--spacing-large);
+    border-radius: var(--border-radius-large);
+    box-shadow: var(--shadow-light);
+    width: 100%;
+    text-align: center;
+}
+
+.login-card h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-large);
+    font-size: 2rem;
+}
+
+/* --- Form Styling --- */
+.form-group {
+    text-align: left;
+    margin-bottom: var(--spacing-medium);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius-medium);
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: var(--color-secondary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(240, 195, 195, 0.5); /* Soft focus ring */
+}
+
+/* --- Buttons (Reusing primary style) --- */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: var(--border-radius-medium);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: var(--shadow-light);
+}
+
+.btn-primary:hover {
+    background-color: #6c7e8a; /* Darker primary */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.btn-block {
+    width: 100%;
+    margin-top: var(--spacing-small);
+}
+
+/* --- Switch Link --- */
+.switch-link {
+    margin-top: var(--spacing-medium);
+    font-size: 0.95rem;
+}
+
+.switch-link a {
+    color: var(--color-secondary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.switch-link a:hover {
+    text-decoration: underline;
+    color: var(--color-primary);
+}
+
+/* --- Validation Message --- */
+.validation-message {
+    margin-bottom: var(--spacing-small);
+    font-size: 0.9rem;
+    min-height: 1.2rem; /* Reserve space */
+    font-weight: 600;
+}
+
+/* --- Responsiveness --- */
+@media (max-width: 480px) {
+    .login-card {
+        padding: var(--spacing-medium);
+    }
+    .login-card h2 {
+        font-size: 1.6rem;
+    }
+}
