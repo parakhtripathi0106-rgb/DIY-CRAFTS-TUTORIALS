@@ -1,0 +1,18 @@
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">Creative Hub</a>
+        <ul class="nav-links">
+            <li><a href="categories.html"><i class="fas fa-th-large"></i> Categories</a></li>
+            <li><a href="shop.html"><i class="fas fa-store"></i> Shop</a></li>
+            <li><a href="community.html"><i class="fas fa-users"></i> Community</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="upload.html" class="btn btn-upload"><i class="fas fa-plus"></i> Upload</a>
+            <a href="login.html" class="btn btn-login">Login</a>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+</header>
