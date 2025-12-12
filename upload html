@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Your Tutorial - Creative Hub</title>
+    <link rel="stylesheet" href="upload.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">Creative Hub</a>
+            <ul class="nav-links">
+                <li><a href="categories.html"><i class="fas fa-th-large"></i> Categories</a></li>
+                <li><a href="shop.html"><i class="fas fa-store"></i> Shop</a></li>
+                <li><a href="community.html"><i class="fas fa-users"></i> Community</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="upload.html" class="btn btn-upload active-upload"><i class="fas fa-plus"></i> Upload</a>
+                <a href="login.html" class="btn btn-login">Login</a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="container upload-main">
+        <section class="upload-section">
+            <h1 class="upload-title">Share Your Creativity!</h1>
+            <p class="upload-tagline">Upload your step-by-step DIY tutorial and inspire our community.</p>
+
+            <form class="upload-form">
+                <div class="form-group">
+                    <label for="tutorial-title">Tutorial Title <span class="required">*</span></label>
+                    <input type="text" id="tutorial-title" name="tutorial-title" placeholder="e.g., DIY Macrame Plant Hanger" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Category <span class="required">*</span></label>
+                    <select id="category" name="category" required>
+                        <option value="">Select a Category</option>
+                        <option value="wooden-crafts">Wooden Crafts</option>
+                        <option value="paper-crafts">Paper Crafts</option>
+                        <option value="arts-painting">Arts & Painting</option>
+                        <option value="knitting">Knitting</option>
+                        <option value="sewing">Sewing</option>
+                        <option value="slime">Slime</option>
+                        <option value="crochet">Crochet</option>
+                        <option value="resin-art">Resin Art</option>
+                        <option value="diy-decorating">DIY Decorating</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="short-description">Short Description <span class="required">*</span></label>
+                    <textarea id="short-description" name="short-description" rows="3" placeholder="A brief summary of your tutorial..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="full-description">Detailed Instructions <span class="required">*</span></label>
+                    <textarea id="full-description" name="full-description" rows="10" placeholder="Provide step-by-step instructions, tips, and tricks. Use clear, concise language."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="materials-tools">Materials & Tools List <span class="required">*</span></label>
+                    <textarea id="materials-tools" name="materials-tools" rows="5" placeholder="List all materials and tools needed, one item per line."></textarea>
+                </div>
+
+                <div class="form-group file-upload-group">
+                    <label>Upload Images/Videos <span class="required">*</span></label>
+                    <div class="file-upload-box">
+                        <input type="file" id="tutorial-media" name="tutorial-media[]" accept="image/*,video/*" multiple hidden>
+                        <label for="tutorial-media" class="upload-button">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            Drag & Drop or Click to Browse
+                        </label>
+                        <p class="upload-instructions">Max file size: 10MB. Accepted formats: JPG, PNG, GIF, MP4.</p>
+                        <div id="file-list" class="file-list"></div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-submit-tutorial">Submit Tutorial</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Creative Hub. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Minimal JS for mobile navigation toggle
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Optional: JS for displaying selected file names
+        const fileInput = document.getElementById('tutorial-media');
+        const fileList = document.getElementById('file-list');
+
+        fileInput.addEventListener('change', () => {
+            fileList.innerHTML = ''; // Clear previous list
+            if (fileInput.files.length > 0) {
+                for (const file of fileInput.files) {
+                    const listItem = document.createElement('div');
+                    listItem.textContent = file.name;
+                    listItem.classList.add('file-item');
+                    fileList.appendChild(listItem);
+                }
+            } else {
+                fileList.textContent = 'No files chosen.';
+            }
+        });
+
+        // Simple form submission alert (no actual upload/backend)
+        document.querySelector('.upload-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Tutorial submitted successfully! (This is a demo, no actual upload occurred.)');
+            // In a real app, you'd send this data to a server
+            this.reset(); // Clear the form
+            fileList.innerHTML = ''; // Clear file list display
+        });
+    </script>
+</body>
+</html>
