@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials - Wooden Crafts | The Creative Hub</title>
+    <link rel="stylesheet" href="tutorials.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">Creative Hub</a>
+            <ul class="nav-links">
+                <li><a href="categories.html" class="active"><i class="fas fa-th-large"></i> Categories</a></li>
+                <li><a href="shop.html"><i class="fas fa-store"></i> Shop</a></li>
+                <li><a href="community.html"><i class="fas fa-users"></i> Community</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="upload.html" class="btn btn-upload"><i class="fas fa-plus"></i> Upload</a>
+                <a href="login.html" class="btn btn-login">Login</a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="tutorials-header">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / 
+                <a href="categories.html">Categories</a> / 
+                <span>Wooden Crafts</span>
+            </div>
+            <h1>Wooden Crafts Tutorials 🔨</h1>
+            <p>A collection of tutorials for woodworking, carving, and furniture upcycling. Find your next project below!</p>
+        </section>
+
+        <section class="tutorial-grid">
+            
+            <a href="tutorial-details.html" class="tutorial-card">
+                <div class="thumbnail-placeholder">
+                    <span class="thumb-label">WOOD</span>
+                </div>
+                <div class="card-content">
+                    <h3>Simple DIY Wooden Phone Stand</h3>
+                    <p class="description">A quick weekend project using scrap wood and basic tools. Perfect for beginners.</p>
+                    <div class="card-footer">
+                        <span class="creator"><i class="fas fa-user-circle"></i> Maker Mike</span>
+                        <span class="likes"><i class="fas fa-heart"></i> 4.5k</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="tutorial-details.html" class="tutorial-card">
+                <div class="thumbnail-placeholder">
+                     <span class="thumb-label">CARVE</span>
+                </div>
+                <div class="card-content">
+                    <h3>Carving a Spoon: Beginner's Guide</h3>
+                    <p class="description">Master the basics of wood carving with this step-by-step guide on making a simple spoon.</p>
+                    <div class="card-footer">
+                        <span class="creator"><i class="fas fa-user-circle"></i> Crafty Claire</span>
+                        <span class="likes"><i class="fas fa-heart"></i> 1.2k</span>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="tutorial-details.html" class="tutorial-card">
+                <div class="thumbnail-placeholder">
+                     <span class="thumb-label">DECOR</span>
+                </div>
+                <div class="card-content">
+                    <h3>Rustic Floating Shelves in 3 Steps</h3>
+                    <p class="description">How to create beautiful, minimalist floating shelves to organize any room.</p>
+                    <div class="card-footer">
+                        <span class="creator"><i class="fas fa-user-circle"></i> Decor Dave</span>
+                        <span class="likes"><i class="fas fa-heart"></i> 8.9k</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="tutorial-details.html" class="tutorial-card">
+                <div class="thumbnail-placeholder">
+                     <span class="thumb-label">UPCYCLE</span>
+                </div>
+                <div class="card-content">
+                    <h3>Upcycling an Old Wooden Pallet into a Coffee Table</h3>
+                    <p class="description">Turn junk into treasure with this easy, low-cost pallet project for your living room.</p>
+                    <div class="card-footer">
+                        <span class="creator"><i class="fas fa-user-circle"></i> Zero Waste Zoey</span>
+                        <span class="likes"><i class="fas fa-heart"></i> 3.1k</span>
+                    </div>
+                </div>
+            </a>
+
+            </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Creative Hub. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Minimal JS for mobile navigation toggle
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
