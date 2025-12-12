@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Tutorial: DIY Wooden Phone Stand | Creative Hub</title>
+    <link rel="stylesheet" href="tutorial-details.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">Creative Hub</a>
+            <ul class="nav-links">
+                <li><a href="categories.html"><i class="fas fa-th-large"></i> Categories</a></li>
+                <li><a href="shop.html"><i class="fas fa-store"></i> Shop</a></li>
+                <li><a href="community.html"><i class="fas fa-users"></i> Community</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="upload.html" class="btn btn-upload"><i class="fas fa-plus"></i> Upload</a>
+                <a href="login.html" class="btn btn-login">Login</a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <div class="tutorial-layout">
+            
+            <section class="tutorial-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / 
+                    <a href="categories.html">Categories</a> / 
+                    <a href="tutorials.html">Wooden Crafts</a> / 
+                    <span>Wooden Phone Stand</span>
+                </div>
+                
+                <h1 class="tutorial-title">Simple DIY Wooden Phone Stand (Beginner Friendly)</h1>
+                
+                <div class="creator-info">
+                    <img src="assets/images/creator-profile.jpg" alt="Profile of Maker Mike" class="creator-photo">
+                    <span class="creator-name">By <a href="community.html">Maker Mike</a></span>
+                    <span class="date"><i class="fas fa-calendar-alt"></i> Published: Jan 15, 2025</span>
+                </div>
+
+                <div class="media-container">
+                    
+                </div>
+                
+                <p class="summary">
+                    This is the perfect project for new woodworkers! You only need a small piece of wood and two simple cuts to create a functional and elegant phone stand for your desk or nightstand. It can be easily customized with stain or paint.
+                </p>
+
+                <div class="interaction-buttons">
+                    <button class="action-btn"><i class="fas fa-heart"></i> Like (4.5K)</button>
+                    <button class="action-btn"><i class="fas fa-bookmark"></i> Save</button>
+                    <button class="action-btn"><i class="fas fa-share-alt"></i> Share</button>
+                </div>
+                
+                <h2 class="section-heading">Step-by-Step Instructions</h2>
+                
+                <div class="steps-list">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-detail">
+                            <h3>Measure and Mark the Wood</h3>
+                            <p>Cut your wood to a size of **4" x 8" (10cm x 20cm)**. On the 8-inch side, measure 2 inches from the bottom edge and mark a line across. This marks where the slot will start.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-detail">
+                            <h3>Cut the Base Slot</h3>
+                            <p>Using a **handsaw or bandsaw**, cut a groove (slot) 1/2 inch wide, starting from the marked line and going halfway through the thickness of the wood. This slot is where the phone rests.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-detail">
+                            <h3>Sand and Finish</h3>
+                            <p>Thoroughly **sand all edges and surfaces** with 120, then 220-grit sandpaper for a smooth, premium feel. Apply a natural oil finish or a pastel-colored paint to complete your stand.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            
+            <aside class="sidebar">
+                <div class="materials-box">
+                    <h2 class="section-heading"><i class="fas fa-clipboard-list"></i> Materials & Tools</h2>
+                    
+                    <h3>Materials Needed:</h3>
+                    <ul>
+                        <li><i class="fas fa-angle-right"></i> One piece of scrap wood (e.g., pine or oak), minimum 4" x 8" x 3/4"</li>
+                        <li><i class="fas fa-angle-right"></i> Wood glue (optional)</li>
+                        <li><i class="fas fa-angle-right"></i> Sandpaper (120 and 220 grit)</li>
+                        <li><i class="fas fa-angle-right"></i> Wood finish (oil, stain, or pastel paint)</li>
+                    </ul>
+                    
+                    <h3>Tools Required:</h3>
+                    <ul>
+                        <li><i class="fas fa-angle-right"></i> Ruler or measuring tape</li>
+                        <li><i class="fas fa-angle-right"></i> Pencil</li>
+                        <li><i class="fas fa-angle-right"></i> Handsaw, Jigsaw, or Bandsaw</li>
+                        <li><i class="fas fa-angle-right"></i> Clamps (optional)</li>
+                    </ul>
+
+                    <a href="shop.html" class="btn btn-primary btn-block-shop"><i class="fas fa-shopping-basket"></i> Shop These Materials</a>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Creative Hub. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Minimal JS for mobile navigation toggle
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
