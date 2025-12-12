@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Hub - Your Source for DIY and Craft Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">Creative Hub</a>
+            <ul class="nav-links">
+                <li><a href="categories.html"><i class="fas fa-th-large"></i> Categories</a></li>
+                <li><a href="shop.html"><i class="fas fa-store"></i> Shop</a></li>
+                <li><a href="community.html"><i class="fas fa-users"></i> Community</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="upload.html" class="btn btn-upload"><i class="fas fa-plus"></i> Upload</a>
+                <a href="login.html" class="btn btn-login">Login</a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Unleash Your Inner Creator.</h1>
+                    <p class="hero-subtitle">Discover thousands of easy-to-follow DIY tutorials, shop premium supplies, and connect with a global crafting community.</p>
+                    <div class="hero-ctas">
+                        <a href="categories.html" class="btn btn-primary btn-cta">Explore Tutorials <i class="fas fa-arrow-right"></i></a>
+                        <a href="upload.html" class="btn btn-secondary btn-cta">Share Your Craft</a>
+                    </div>
+                </div>
+                <div class="hero-image-placeholder">
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-section container">
+            <h2 class="section-title"><i class="fas fa-fire"></i> Trending This Week</h2>
+            <div class="tutorial-grid">
+                
+                <a href="tutorial-details.html" class="tutorial-card">
+                    <div class="card-image"></div>
+                    <div class="card-body">
+                        <span class="card-category">Resin Art</span>
+                        <h3 class="card-title">Pastel Sparkle Resin Keychains</h3>
+                        <div class="card-meta">
+                            <span><i class="fas fa-clock"></i> 45 mins</span>
+                            <span><i class="fas fa-heart"></i> 6.2K</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="tutorial-details.html" class="tutorial-card">
+                    <div class="card-image"></div>
+                    <div class="card-body">
+                        <span class="card-category">Knitting & Crochet</span>
+                        <h3 class="card-title">Beginner's Simple Shell Blanket</h3>
+                        <div class="card-meta">
+                            <span><i class="fas fa-clock"></i> 5 hours</span>
+                            <span><i class="fas fa-heart"></i> 4.1K</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="tutorial-details.html" class="tutorial-card">
+                    <div class="card-image"></div>
+                    <div class="card-body">
+                        <span class="card-category">Woodworking</span>
+                        <h3 class="card-title">Minimalist Floating Wall Shelf</h3>
+                        <div class="card-meta">
+                            <span><i class="fas fa-clock"></i> 1 hour</span>
+                            <span><i class="fas fa-heart"></i> 5.8K</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="cta-center">
+                <a href="categories.html" class="btn btn-secondary btn-full-width">View All 10+ Categories</a>
+            </div>
+        </section>
+
+        <section class="value-section">
+            <div class="container value-grid">
+                
+                <div class="value-item">
+                    <div class="icon-circle"><i class="fas fa-users"></i></div>
+                    <h3>Global Community</h3>
+                    <p>Connect with over 100k active makers. Share progress and get feedback.</p>
+                    <a href="community.html" class="link-more">Meet the Creators <i class="fas fa-chevron-right"></i></a>
+                </div>
+
+                <div class="value-item">
+                    <div class="icon-circle"><i class="fas fa-tools"></i></div>
+                    <h3>Curated Supplies</h3>
+                    <p>Access high-quality, verified materials recommended by expert artists.</p>
+                    <a href="shop.html" class="link-more">Shop Essential Kits <i class="fas fa-chevron-right"></i></a>
+                </div>
+
+                <div class="value-item">
+                    <div class="icon-circle"><i class="fas fa-cloud-upload-alt"></i></div>
+                    <h3>Publish Your Art</h3>
+                    <p>Earn passive income and build your brand by publishing your own tutorials.</p>
+                    <a href="upload.html" class="link-more">Start Uploading <i class="fas fa-chevron-right"></i></a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="community-cta-section">
+            <div class="container community-content">
+                <div class="community-text">
+                    <h2 class="section-title">Ready to Start Making?</h2>
+                    <p>Join the Creative Hub community today to save your favorite projects, track your progress, and support independent artists.</p>
+                    <a href="login.html" class="btn btn-primary btn-cta-community">Join Free Now</a>
+                </div>
+                <div class="community-image-placeholder">
+                    
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Creative Hub. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Minimal JS for mobile navigation toggle
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
